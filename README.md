@@ -1,6 +1,6 @@
 Welcome to cops training. Click below topic to navigate topic. 
 
-1. ### Link on the topics to read details about each topic:
+1. ### Link to the topics, click the to read details about each topic:
 
     [commands to managing file and directory](https://github.com/SukumarSuryawanshi/cops/blob/master/cops-b1.md#below-are-the-lists-of-command-used-or-managing-files-and-directory)
 
