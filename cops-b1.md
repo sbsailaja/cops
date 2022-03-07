@@ -127,7 +127,7 @@ when adduser command will create 3 thing when executed.
             Is the information correct? [Y/n] yes
 
 
-6. **id** : To check information of an id. ubuntu@i:~/sukumar$ id copsdemo
+5. **id** : To check information of an id. ubuntu@i:~/sukumar$ id copsdemo
 
     syntax id <username>
         
@@ -137,14 +137,142 @@ when adduser command will create 3 thing when executed.
 
         uid=1004(copsdemo) gid=1004(copsdemo) groups=1004(copsdemo)
 
-7. addgroup 
+6. addgroup 
 
     groupadd [OPTIONS] GROUPNAME
 
-        groupadd cops-b1 #This is will create a new group named cops-b1, with auto generate id.
-        groupadd -g -f 2001 cops-b1 # this would create a new group ith specific id 2001. use -f if you get below error message 
-        groupadd: group 'cops-b1' already exists
-8. 
+    groupadd cops-b1 #This is will create a new group named cops-b1, with auto generate id.
+
+    groupadd -g 2001 cops-b1   #This would create a new group ith specific id 2001
+        
+        
+        
+    if you get below error message that group already exists then try using - f flag
+        
+        groupadd: group 'cops-b1' -f
+        groupadd -g -f 2001 cops-b1   #This would create a new group ith specific id 2001
+
+7. chmoduser
+
+
+## Scripting
+
+what is script ? 
+
+A: script is a executable file which execute the instructions which are programmed / written /coded in it.
+
+Important pt:
+
+> They are have extension .sh | ex. myscript.sh
+
+> The user needs execution permission to execute .sh files
+
+> They can be run using any compatible shells like bash or sh.
+        
+        bash myscript.sh
+        sh myscript.sh 
+
+**Few type of shells**
+
+1. sh - shell
+2. bash - born again shell
+3. csh
+4. tcsh
+5. Ksh
+
+
+**what is shebang (#!/bin/bash) ?**
+
+A: Shebang is interpreter for system to make it understand which shell to use. 
+
+when writing any shell script, it is mentioned at first line of the script.
+
+it's denoted as
+    
+        #!/bin/bash
+        #Place to declare Variables
+        variable=1
+        variable=2
+        variable=3
+        
+        # place to enter execution scripts lines
+
+        cmd "do something"
+        echo "something"
+        
+
+when we 
+
+**what is variable (script variable) ?**
+
+a variable is an abstract storage location paired with an associated value. 
+
+1. a=1, the value of a is 1 
+2. x=India, The value of x is stored a India
+
+above a and x are called a variable name
+
+
+The variable in shell scripting are called by prefixing $ symbol to the variable name.
+
+usage.
+
+
+    a=1
+    x=India
+    echo "The value of a is $a"
+    echo " I live in $x" 
+
+
+exercise 1 : info.sh
+
+Task to create a script which will fetch dynamic values using few basic commands.
+
+Steps 1:  creating a script file name info.sh
+
+    sudo touch info.sh
+
+step2 : edit info.sh by opening it with vim or vi. 
+
+    sudo vim info.sh
+
+step 3: Enter the below lines:
+
+    #!/bin/bash
+
+    # Enter the variable here , Dont change the variables.
+    Name=`whoami`
+    Date=`date`
+    working_dir=`pwd`
+    Plogged='last | wc -c'
+
+    # This is execution part -- using print cmd to execute lines
+
+    printf "
+
+    1. Hello There, I am $Name
+    2. Today is $Date
+    3. I am working on under "$working_dir" directory
+    4. No of people logged on this machine in past $Plogged
+
+    \n **END OF SCRIPT** "
+
+step 4: save the file. (escape --> colon --> wq )
+
+Step 5: execute the file from linux.  (cd to file directory)
+
+    bash info.sh
+    or
+    shell info.sh
+
+You should get below out put.
+
+        1. Hello There, I am <YourUserName>
+        2. Today is Mon, Mar  7, 2022  8:52:12 AM
+        3. I am working on under <direcotoryName> directory
+
+
+
 
 
 
