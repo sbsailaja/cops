@@ -201,8 +201,6 @@ it's denoted as
         echo "something"
         
 
-when we 
-
 **what is variable (script variable) ?**
 
 a variable is an abstract storage location paired with an associated value. 
@@ -214,8 +212,8 @@ above a and x are called a variable name
 
 
 The variable in shell scripting are called by prefixing $ symbol to the variable name.
+example
 
-usage.
 
 
     a=1
