@@ -13,5 +13,7 @@ Welcome to cops training. Click below topic to navigate topic.
 
 3. ### Download  scripts used in class exercise.
 
-    1. [info.sh](https://github.com/SukumarSuryawanshi/cops/blob/master/info.sh) script file, for copying script click here.             For copying content of file click here - [Info.sh - raw](https://raw.githubusercontent.com/SukumarSuryawanshi/cops/master/info.sh)
+    1. [info.sh](https://github.com/SukumarSuryawanshi/cops/blob/master/info.sh) script file, for copying script click here.             For copying content of file click here - [info.sh - raw](https://raw.githubusercontent.com/SukumarSuryawanshi/cops/master/info.sh)
+
+    2. [info_input-read.sh](https://github.com/SukumarSuryawanshi/cops/blob/master/Info_input-read.sh) script file, for copying script click here.             For copying content of file click here - [Info_input-read.sh - raw](https://raw.githubusercontent.com/
     
