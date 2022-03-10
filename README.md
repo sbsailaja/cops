@@ -34,5 +34,7 @@ Welcome to cops training. Click below topic to navigate topic.
 
     
     3. [info_ifstatement.sh](https://github.com/SukumarSuryawanshi/cops/blob/master/Info_input-read.sh) script file. (Day-3)
+
+        a. [demo1_If-statement](https://github.com/SukumarSuryawanshi/cops/blob/master/demo1_If-statement.sh)
     
     4. [if-elif-statement.sh](https://github.com/SukumarSuryawanshi/cops/blob/master/if-elif-statement.sh) script file. (Day-4)
